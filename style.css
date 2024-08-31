@@ -1,0 +1,47 @@
+.container {
+  width: 400px;
+  margin: 10px auto;
+  background-color: rgb(236, 156, 156);
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+#pokeName {
+  margin-top: 10px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+#btn {
+  background-color: rgb(13, 13, 14);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  margin: 0;
+}
+.abilities {
+  color: black;
+  text-align: justify;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 3px;
+}
+.pokeImage {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.card-container {
+  display: none;
+  width: 400px;
+  margin: 10px auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}

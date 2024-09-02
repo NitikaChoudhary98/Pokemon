@@ -37,7 +37,7 @@ searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   //fetching the image from the api
-  const data = getPokemonData(pokemonName.value.trim());
+  const data = getPokemonData(pokemonName.value.trim()); //promise
   data.then((res) => {
     console.log(res);
     const pokemonImage = res.sprites.front_default;
@@ -64,7 +64,7 @@ async function getPokemonData(pokeName) {
     let response = await fetch(`${url}${pokeName}`, requestOptions);
     response = await response.json();
     return response;
-  } catch (err) {
-    console.log("Error", err);
+  } catch {
+    return "pokemon does not exist";
   }
 }
